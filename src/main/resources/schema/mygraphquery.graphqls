@@ -1,0 +1,10 @@
+type Query {
+	firstNameQuery : String
+	lastNameQuery : String
+	userName(firstName :String, lastName :String): String
+	getEmployee(employeeDto: EmployeeDto): String
+}
+input EmployeeDto{
+	firstName :String
+	lastName :String
+}
