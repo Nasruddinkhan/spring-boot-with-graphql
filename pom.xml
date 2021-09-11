@@ -19,6 +19,10 @@
 	<dependencies>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-data-jpa</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
 		</dependency>
 		<!-- https://mvnrepository.com/artifact/com.graphql-java/graphql-spring-boot-starter -->
@@ -27,6 +31,15 @@
 			<artifactId>graphql-spring-boot-starter</artifactId>
 			<version>5.0.2</version>
 		</dependency>
+		<!-- https://mvnrepository.com/artifact/oracle/ojdbc6 -->
+		<dependency>
+			<groupId>oracle</groupId>
+			<artifactId>ojdbc6</artifactId>
+			<version>11.2.0.3</version>
+			<scope>system</scope>
+			<systemPath>E:/All Jar/ojdbc6.jar</systemPath>
+		</dependency>
+
 		<!-- https://mvnrepository.com/artifact/com.graphql-java/graphql-java-tools -->
 		<dependency>
 			<groupId>com.graphql-java</groupId>
@@ -47,6 +60,12 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.modelmapper</groupId>
+			<artifactId>modelmapper</artifactId>
+			<version>2.4.4</version>
+			<scope>compile</scope>
 		</dependency>
 	</dependencies>
 

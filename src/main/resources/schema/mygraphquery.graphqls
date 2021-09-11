@@ -1,10 +1,21 @@
 type Query {
-	firstNameQuery : String
-	lastNameQuery : String
-	userName(firstName :String, lastName :String): String
-	getEmployee(employeeDto: EmployeeDto): String
+    firstNameQuery : String
+    lastNameQuery : String
+    userName(firstName :String, lastName :String): String
+   # getEmployee(employeeDto: EmployeeDto): String
+	getEmployeeById( employeeId: Int) :  EmployeeDto
+    getDepartments : [DepartmentDto]
+    findAllEmployees: [EmployeeDto]
 }
-input EmployeeDto{
-	firstName :String
-	lastName :String
+type DepartmentDto {
+    departmentName: String
+}
+type EmployeeDto{
+    firstName :String
+    lastName :String
+    email :String
+    phoneNumber:String
+    hireDate:String
+    salary:String
+    commissionPct :String
 }

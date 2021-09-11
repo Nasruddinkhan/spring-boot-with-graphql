@@ -1,3 +1,25 @@
 
 server:
   port: 8999
+spring:
+  application:
+    name: graphql-service
+  datasource:
+    driver-class-name: oracle.jdbc.driver.OracleDriver
+    password: password
+    tomcat:
+      default-auto-commit: true
+      initial-size: 20
+      max-active: 50
+      max-idle: 15
+      max-wait: 20000
+    url: "jdbc:oracle:thin:@localhost:1521:xe"
+    username: hr
+    jpa:
+      database-platform: org.hibernate.dialect.MySQL5Dialect
+      hibernate:
+        ddl-auto: update
+      properties:
+        hibernate:
+          format_sql: true
+      show-sql: true
